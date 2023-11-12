@@ -70,7 +70,7 @@ public class SocialLoginService {
 		MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
 		body.add("grant_type", "authorization_code");
 		body.add("client_id", "27e803123410707e0b773e8ba9da2c61"); // 각자 rest api key
-		body.add("redirect_uri", "http://localhost:3000/oauth/kakao");
+		body.add("redirect_uri", "https://testf-5ba01.web.app/oauth/kakao");
 		body.add("code", code);
 		
 		HttpEntity<MultiValueMap<String, String>> requestEntity = new HttpEntity<>(body, header);
